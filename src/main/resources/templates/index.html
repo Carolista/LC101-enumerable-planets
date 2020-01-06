@@ -9,6 +9,9 @@
 </head>
 <body>
 <h1>Pick a planet:</h1>
+<ul>
+    <li th:each = "planet : ${planets}" th:text = "${planet.displayName} + ': ' + ${planet.yearLength} + ' Earth days per year'"></li>
+</ul>
 
 </body>
 </html>
